@@ -69,24 +69,25 @@ int main()
 			cout << "Sorry, " << guess << " isn't the word.\n";
 			++wrong;
 		}
-
-		//shut down
-		if (wrong == MAX_WRONG)
-		{
-			cout << "\nYou've been hanged!";
-		}
-		else
-		{
-			cout << "\nYou've guessed it.";
-		}
-
-		cout << "\nThe word was " << THE_WORD << endl;
-
-		cin.get();
-
-		return 0;
-
-
 	}
+
+	//shut down
+	if (wrong == MAX_WRONG)
+	{
+		cout << "\nYou've been hanged!";
+	}
+	else
+	{
+		cout << "\nYou've guessed it.";
+	}
+
+	cout << "\nThe word was " << THE_WORD << endl;
+
+	cin.get();
+
+	return 0;
+
+
+
 }
 
